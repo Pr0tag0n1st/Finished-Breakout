@@ -96,6 +96,8 @@ int main()
 	//
 	//
 	if (ball == NULL)
+	cout << "Ball missing" << endl;
+	
 	if (ball2 == NULL)
 	cout << "flag 6" << endl;
 	image = al_load_bitmap("potatoes.jpg");
