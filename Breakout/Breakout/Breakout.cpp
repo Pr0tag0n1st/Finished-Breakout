@@ -168,7 +168,7 @@ int main()
 	boo.initBrick(560, 435, 50, 30);
 	//so the game loop is set to act on "ticks" of the timer OR keyboard presses 
 	//OR the mouse closing the display
-	while (!doexit && lives != 0 && deadbricks !=3)
+	while (!doexit && lives != 0 && deadbricks !=29)
 	{
 		ALLEGRO_EVENT ev;
 		al_wait_for_event(event_queue, &ev);
@@ -555,7 +555,7 @@ int main()
 		al_destroy_display(display);
 		al_destroy_event_queue(event_queue);
 	}
-	if (deadbricks == 3) {
+	if (deadbricks == 29) {
 		al_clear_to_color(al_map_rgb(0, 0, 0));
 		al_draw_textf(font, al_map_rgb(255, 255, 255), 320, 240, 0, "YOU WIN!  REMAINING LIVES: %s", lives);
 		al_rest(3.0);
