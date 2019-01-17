@@ -168,7 +168,7 @@ int main()
 	boo.initBrick(560, 435, 50, 30);
 	//so the game loop is set to act on "ticks" of the timer OR keyboard presses 
 	//OR the mouse closing the display
-	while (!doexit && lives != 0 && deadbricks !=3)
+	while (!doexit && lives != 0 && deadbricks !=29)
 	{
 		ALLEGRO_EVENT ev;
 		al_wait_for_event(event_queue, &ev);
