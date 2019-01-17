@@ -548,16 +548,18 @@ int main()
 	if (lives == 0) {
 		al_clear_to_color(al_map_rgb(0, 0, 0));
 		al_draw_textf(font, al_map_rgb(255, 255, 255), 320, 240, 0, "YOU LOSE!  BRICKS HIT: %s", deadbricks);
-		al_rest(3.0);
+		al_flip_display();
+				al_rest(3.0);
 		al_destroy_bitmap(paddle);
 		al_destroy_bitmap(ball);
 		al_destroy_timer(timer);
 		al_destroy_display(display);
 		al_destroy_event_queue(event_queue);
 	}
-	if (deadbricks == 3) {
+	if (deadbricks == 29) {
 		al_clear_to_color(al_map_rgb(0, 0, 0));
 		al_draw_textf(font, al_map_rgb(255, 255, 255), 320, 240, 0, "YOU WIN!  REMAINING LIVES: %s", lives);
+		al_flip_display();
 		al_rest(3.0);
 		al_destroy_bitmap(paddle);
 		al_destroy_bitmap(ball);
